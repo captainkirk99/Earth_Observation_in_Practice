@@ -1,10 +1,10 @@
 # Earth Observation in Practice: Code Examples
 
-This repository holds the public example code for *Earth Observation in Practice: A Mission-by-Mission Guide to Reading Satellite Data with NetCDF and Python*, a book by Edward Hartnett.
+This repository holds the public example code for [*Earth Observation in Practice: A Mission-by-Mission Guide to Reading Satellite Data with NetCDF and Python*](https://www.amazon.com/dp/B0HJRZ9F7L), a book by Edward Hartnett.
 
 ## What the Examples Cover
 
-Each example reads data from a civil Earth observation mission and produces a plot or summary. The current examples are:
+Each example reads data from a civil Earth observation mission and produces a plot or summary. They complement the NetCDF techniques covered in [*The NetCDF Developer's Handbook*](https://www.amazon.com/dp/B0H7Q49MPS). The current examples are:
 
 - **CNES / NASA SWOT**: read the Level 2 KaRIn Low Rate Sea Surface Height product and plot sea surface height anomaly.
 - **ESA Sentinel-3 OLCI**: read Ocean and Land Colour Instrument data and plot a true-color or band-ratio image.
