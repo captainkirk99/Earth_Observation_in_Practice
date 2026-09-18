@@ -1,7 +1,3 @@
-# This is example code from the book: Earth Observation in Practice
-# https://tinyurl.com/43e26by6
-# Author: Edward Hartnett
-# Date: 2026-09-18
 """Download NOAA gridded VIIRS LST files from the NOAA JPSS AWS Open Data buckets.
 
 Uses ``boto3`` with anonymous (unsigned) requests against the public
@@ -11,6 +7,12 @@ Earthdata credentials are required.  Files are laid out as::
     GRIDDED_VIIRS_LST_D/YYYY/MM/DD/GRIDDED-VIIRS-LST-D_v1r1_n20_sYYYYMMDD_eYYYYMMDD_c....nc
 
 Downloads are skipped when the file is already present in ``data/``.
+
+This is example code from the book: Earth Observation in Practice
+https://tinyurl.com/43e26by6
+
+Author: Edward Hartnett
+Date: 2026-09-18
 """
 
 from datetime import date, datetime

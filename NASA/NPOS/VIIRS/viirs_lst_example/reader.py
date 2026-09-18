@@ -1,7 +1,3 @@
-# This is example code from the book: Earth Observation in Practice
-# https://tinyurl.com/43e26by6
-# Author: Edward Hartnett
-# Date: 2026-09-18
 """Read NOAA gridded VIIRS land surface temperature (LST) files.
 
 The ``GRIDDED_VIIRS_LST_D`` / ``GRIDDED_VIIRS_LST_N`` products are daily
@@ -14,6 +10,12 @@ x = -180 degrees, where ``x = lon * cos(lat)``.
 
 This module maps a lat/lon bounding box onto that grid and returns the
 subset as an ``xarray.DataArray`` on a regular lat/lon grid.
+
+This is example code from the book: Earth Observation in Practice
+https://tinyurl.com/43e26by6
+
+Author: Edward Hartnett
+Date: 2026-09-18
 """
 
 from pathlib import Path
