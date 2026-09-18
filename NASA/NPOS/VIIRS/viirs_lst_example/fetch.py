@@ -50,6 +50,10 @@ def parse_date(date_str: str) -> date:
 
 
 def resolve_bucket(satellite: str) -> str:
+    """Return the NOAA AWS bucket name for a satellite name such as ``NOAA-20``.
+
+    Raises ``ValueError`` for an unknown satellite.
+    """
     key = satellite.strip().lower()
     if key not in SATELLITE_BUCKET:
         raise ValueError(

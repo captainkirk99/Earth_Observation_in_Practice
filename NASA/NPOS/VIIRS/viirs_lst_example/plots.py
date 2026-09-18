@@ -16,6 +16,10 @@ import xarray as xr
 
 
 def _finish(fig, out_path: Path | None, show: bool) -> Path | None:
+    """Save ``fig`` to ``out_path`` (if given), optionally show it, then close it.
+
+    Returns the path written, or ``None`` when no file was requested.
+    """
     if out_path is not None:
         out_path = Path(out_path)
         out_path.parent.mkdir(parents=True, exist_ok=True)

@@ -29,6 +29,11 @@ CENTRAL_VALLEY = (-123.0, 34.5, -117.5, 41.0)
 
 
 def main(argv: list[str] | None = None) -> int:
+    """Parse command-line arguments, load the LST subset, and write the plots.
+
+    ``argv`` defaults to ``sys.argv[1:]``.  Returns a process exit code
+    (0 on success).
+    """
     parser = argparse.ArgumentParser(
         prog="plot-viirs-lst",
         description="Plot NOAA gridded VIIRS land surface temperature for a lat/lon box.",

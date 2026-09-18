@@ -37,6 +37,10 @@ Bounds = tuple[float, float, float, float]  # west, south, east, north
 
 
 def _validate_bounds(bounds: Bounds) -> Bounds:
+    """Check that a ``(west, south, east, north)`` box is ordered and in range.
+
+    Returns the bounds unchanged; raises ``ValueError`` otherwise.
+    """
     west, south, east, north = bounds
     if not (-180.0 <= west < east <= 180.0):
         raise ValueError(f"longitude bounds out of order or range: {bounds}")
