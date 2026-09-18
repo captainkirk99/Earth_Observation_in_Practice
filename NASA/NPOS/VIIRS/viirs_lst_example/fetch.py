@@ -1,3 +1,7 @@
+# This is example code from the book: Earth Observation in Practice
+# https://tinyurl.com/43e26by6
+# Author: Edward Hartnett
+# Date: 2026-09-18
 """Download NOAA gridded VIIRS LST files from the NOAA JPSS AWS Open Data buckets.
 
 Uses ``boto3`` with anonymous (unsigned) requests against the public
