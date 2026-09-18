@@ -12,8 +12,8 @@ into ``data/`` (no credentials needed).  The default bounding box covers
 the Central Valley of California.  Two PNGs are written to the output
 directory: ``lst_map.png`` and ``footprint.png``.
 
-This is example code from the book: Earth Observation in Practice
-https://tinyurl.com/43e26by6
+This is example code from the book
+`Earth Observation in Practice <https://tinyurl.com/43e26by6>`_.
 
 Author: Edward Hartnett
 Date: 2026-09-18

@@ -8,8 +8,8 @@ Earthdata credentials are required.  Files are laid out as::
 
 Downloads are skipped when the file is already present in ``data/``.
 
-This is example code from the book: Earth Observation in Practice
-https://tinyurl.com/43e26by6
+This is example code from the book
+`Earth Observation in Practice <https://tinyurl.com/43e26by6>`_.
 
 Author: Edward Hartnett
 Date: 2026-09-18
