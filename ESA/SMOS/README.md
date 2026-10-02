@@ -35,8 +35,10 @@ Key variables in a `MIR_SMUDP2` file:
 | `Optical_Thickness_Nadir` | Vegetation optical thickness |
 | `Surface_Temperature` | Surface temperature used in the retrieval |
 
-`MIR_OSUDP2` files carry the salinity retrieval as `SSS_corr` (and
-related variables). Use `--list` to print every variable in a file and
+`MIR_OSUDP2` files carry three candidate salinity retrievals,
+`SSS1`, `SSS2`, and `SSS3`, with uncertainties `Sigma_SSS1` to
+`Sigma_SSS3`; `SSS1` is the recommended science variable. Use `--list`
+to print every variable in a file and
 `--variable` to plot a different one, for example
 `--variable Soil_Moisture_DQX` to inspect retrieval quality.
 
@@ -95,7 +97,7 @@ Options:
 | Flag | Meaning |
 |---|---|
 | `FILE` | Local SMOS L2 netCDF file (required) |
-| `--variable NAME` | Science variable to plot (default: `Soil_Moisture` or `SSS`) |
+| `--variable NAME` | Science variable to plot (default: `Soil_Moisture` or `SSS1`) |
 | `--list` | Print the variables in `FILE` and exit |
 | `--bbox W S E N` | Lon/lat box in degrees (default: whole swath) |
 | `--output-dir` | Where to write PNGs. Default `output/` |

@@ -33,11 +33,13 @@ LON_NAMES = ("Longitude", "longitude", "lon")
 
 #: Primary science variables, in the order they are tried when
 #: ``--variable`` is not given.  Covers both the soil moisture product
-#: (``MIR_SMUDP2``) and the ocean salinity product (``MIR_OSUDP2``).
+#: (``MIR_SMUDP2``) and the ocean salinity product (``MIR_OSUDP2``),
+#: which stores three candidate retrievals as ``SSS1``..``SSS3``.
 DATA_VARIABLES = (
     "Soil_Moisture",
-    "SSS_corr",
-    "SSS_uncorr",
+    "SSS1",
+    "SSS2",
+    "SSS3",
     "Sea_Surface_Salinity",
     "SSS",
 )
@@ -97,7 +99,7 @@ def load_grid_point(
         whole swath.
     variable : str or None, optional
         Science variable to read.  Defaults to the first of
-        ``Soil_Moisture``, ``SSS_corr``, ``SSS_uncorr``,
+        ``Soil_Moisture``, ``SSS1``, ``SSS2``, ``SSS3``,
         ``Sea_Surface_Salinity``, ``SSS`` present in the file.
 
     Returns

@@ -20,7 +20,9 @@ import xarray as xr
 #: Per-variable display defaults: (colormap, vmin, vmax, colorbar label).
 VARIABLE_STYLES = {
     "Soil_Moisture": ("YlGnBu", 0.0, 0.7, "Soil moisture (m³/m³)"),
-    "SSS_corr": ("viridis", 30.0, 40.0, "Sea surface salinity (PSU)"),
+    "SSS1": ("viridis", 30.0, 40.0, "Sea surface salinity (PSU)"),
+    "SSS2": ("viridis", 30.0, 40.0, "Sea surface salinity (PSU)"),
+    "SSS3": ("viridis", 30.0, 40.0, "Sea surface salinity (PSU)"),
     "Sea_Surface_Salinity": ("viridis", 30.0, 40.0, "Sea surface salinity (PSU)"),
 }
 
