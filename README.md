@@ -15,6 +15,7 @@ Each example reads data from a civil Earth observation mission and produces a pl
 - **ESA Sentinel-6**: read Poseidon-4 altimetry NetCDF-4 files and print a variable summary.
 - **ISRO NISAR**: read simulated NISAR L2 products and plot a parameter map.
 - **NASA / NOAA GOES-R ABI**: read Advanced Baseline Imager Cloud and Moisture Imagery NetCDF-4 files and plot on the native geostationary projection.
+- **NASA MODIS**: read an HDF4 MODIS science product through netCDF-C with HDF4 support, in Python and C, and plot it on a map.
 
 ## Repository Layout
 
@@ -28,7 +29,8 @@ Each example reads data from a civil Earth observation mission and produces a pl
 ├── ESA/MetOp/METimage/examples/     # MetOp-SG METimage image script
 ├── ESA/Sentinel-6/examples/       # Sentinel-6 standalone script
 ├── ISRO/nisar/nisar_example/        # NISAR example package
-└── NASA/GOES/abi/abi_example/       # GOES-R ABI example package
+├── NASA/GOES/abi/abi_example/       # GOES-R ABI example package
+└── NASA/MODIS/                      # MODIS HDF4 example (Python package and C program)
 ```
 
 Each mission directory contains a `README.md` with exact dependencies, data-source links, and run instructions. Check there before running an example.

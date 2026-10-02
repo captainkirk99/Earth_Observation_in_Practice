@@ -1,0 +1,4 @@
+cartopy>=0.22.0
+matplotlib>=3.7.0
+netCDF4>=1.6.0  # must be built from source against netCDF-C with HDF4; see README.md
+numpy>=1.24.0
